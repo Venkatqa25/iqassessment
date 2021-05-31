@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9827" started-at="2021-05-31T03:53:41Z" finished-at="2021-05-31T03:53:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="9827" started-at="2021-05-31T03:53:41Z" finished-at="2021-05-31T03:53:51Z">
+      <class name="com.restassured.APIAutomation.CountriesandCapitals">
+        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="report_setup" is-config="true" duration-ms="158" started-at="2021-05-31T09:23:41Z" finished-at="2021-05-31T09:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report_setup -->
+        <test-method status="PASS" signature="fetch_CountriesList()[pri:1, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="fetch_CountriesList" duration-ms="6725" started-at="2021-05-31T09:23:41Z" finished-at="2021-05-31T09:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetch_CountriesList -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-05-31T09:23:48Z" finished-at="2021-05-31T09:23:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fetch_CountriesList status=SUCCESS method=CountriesandCapitals.fetch_CountriesList()[pri:1, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="fetch_Capitallist()[pri:2, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="fetch_Capitallist" duration-ms="1455" started-at="2021-05-31T09:23:48Z" finished-at="2021-05-31T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetch_Capitallist -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-05-31T09:23:49Z" finished-at="2021-05-31T09:23:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fetch_Capitallist status=SUCCESS method=CountriesandCapitals.fetch_Capitallist()[pri:2, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="Negative_TC_fetching_the_Capitaldetails()[pri:3, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="Negative_TC_fetching_the_Capitaldetails" duration-ms="1607" started-at="2021-05-31T09:23:49Z" finished-at="2021-05-31T09:23:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.restassured.APIAutomation.Assertions.VerifyStatusCode(Assertions.java:18)
+	at com.restassured.APIAutomation.CountriesandCapitals.Negative_TC_fetching_the_Capitaldetails(CountriesandCapitals.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Negative_TC_fetching_the_Capitaldetails -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="tearDown" is-config="true" duration-ms="11" started-at="2021-05-31T09:23:51Z" finished-at="2021-05-31T09:23:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Negative_TC_fetching_the_Capitaldetails status=FAILURE method=CountriesandCapitals.Negative_TC_fetching_the_Capitaldetails()[pri:3, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.restassured.APIAutomation.CountriesandCapitals@68c4039c]" name="teardown" is-config="true" duration-ms="309" started-at="2021-05-31T09:23:51Z" finished-at="2021-05-31T09:23:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.restassured.APIAutomation.CountriesandCapitals -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

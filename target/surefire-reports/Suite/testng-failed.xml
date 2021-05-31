@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.restassured.APIAutomation.CountriesandCapitals"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.restassured.APIAutomation.CountriesandCapitals">
+        <methods>
+          <include name="Negative_TC_fetching_the_Capitaldetails"/>
+          <include name="report_setup"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.restassured.APIAutomation.CountriesandCapitals -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
